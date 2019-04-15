@@ -1,12 +1,15 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
+      <nav>
+        <g-link to="/">
+          <g-image alt="Native Logo" src="~/images/ntv__logo--primary.png" width="135" />
+        </g-link>
+        <g-link class="nav__link" to="/communities">Communities</g-link>
+        <g-link class="nav__link" to="/help">Help</g-link>
+      </nav>
+      <nav>
+        <g-link class="nav__link" to="/login">Sign In</g-link>
       </nav>
     </header>
     <slot/>

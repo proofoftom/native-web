@@ -5,6 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Native - Tokenized Digital Communities',
+  siteDescription: 'Incentivize and Scale Digital Communities.',
+  siteUrl: 'https://beta.nativeproject.one',
   plugins: []
 }
