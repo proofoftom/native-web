@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "gridsome": "^0.5.0"
+  },
+  "resolutions": {
+    "gridsome/vue-router": "3.0.2"
   }
 }
