@@ -66,5 +66,8 @@ nav {
 .inner {
   max-width: 760px;
   align-self: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 </style>
