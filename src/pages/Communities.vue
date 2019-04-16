@@ -3,7 +3,7 @@
     <h1>Explore Communities</h1>
     <div class="communities">
       <div v-for="community in $page.communities.edges" :key="community.node.id" class="community">
-        <img class="avatar" :src="community.node.icon" width="200" />
+        <img class="hero" :src="community.node.image" width="100%" />
         <h3>{{ community.node.name }}</h3>
         <div class="location" v-html="community.node.location" /> |
         <div class="memberCount">{{ community.node.memberCount }} Members</div>
@@ -25,7 +25,7 @@ query Communities {
     edges {
       node {
         name
-        icon
+        image
         location
         memberCount
         communityPurpose
@@ -56,14 +56,15 @@ export default {
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-  width: 760px;
+  max-width: 760px;
 }
 
 .community {
-  width: 200px;
+  width: 30%;
   padding: 10px;
   border: 1px solid darkslategray;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .community div {
@@ -89,5 +90,16 @@ export default {
 .community button {
   margin-top: 5px;
   padding: 5px;
+}
+
+@media (max-width: 760px) {
+  .communities {
+    flex-direction: column;
+  }
+
+  .community {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 </style>
