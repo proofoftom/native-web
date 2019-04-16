@@ -3,7 +3,7 @@
     <header class="header">
       <nav>
         <g-link to="/">
-          <g-image alt="Native Logo" src="~/images/ntv__logo--primary.png" width="135" />
+          <g-image alt="Native Logo" class="logo" src="~/images/ntv__logo--horizontal.png" width="150" fit="inside" quality="100" />
         </g-link>
         <g-link class="nav__link" to="/communities">Communities</g-link>
         <g-link class="nav__link" to="/help">Help</g-link>
@@ -12,7 +12,9 @@
         <g-link class="nav__link" to="/login">Sign In</g-link>
       </nav>
     </header>
-    <slot/>
+    <div class="inner">
+      <slot/>
+    </div>
   </div>
 </template>
 
@@ -33,21 +35,36 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   height: 80px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav__link {
-  margin-left: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-weight: bold;
+  color: darkslategray;
+  margin-left: 40px;
+}
+
+.inner {
+  max-width: 760px;
+  align-self: center;
 }
 </style>

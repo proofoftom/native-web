@@ -17,7 +17,9 @@
 
 <script>
 export default {
-  
+  metaInfo: {
+    title: 'Build Propserous Communities'
+  }
 }
 </script>
 
