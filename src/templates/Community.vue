@@ -1,11 +1,13 @@
 <template>
   <Layout :title="$page.community.title">
-    <div class="content">
-      <img class="avatar" :src="$page.community.icon"/>
-      <h2>{{ $page.community.name }}</h2>
+    <img class="hero" :src="$page.community.image" width="100%" />
+    <h2>{{ $page.community.name }}</h2>
+    <div class="communityInfo">
       <div class="location" v-html="$page.community.location" /> |
       <div class="memberCount">{{ $page.community.memberCount }} Members</div>
-      <div class="communityPurpose" v-html="$page.community.communityPurpose" />
+    </div>
+    <div class="communityPurpose" v-html="$page.community.communityPurpose" />
+    <div class="subtitles">
       <div class="subtitle" v-html="$page.community.subtitle" />
     </div>
   </Layout>
@@ -15,8 +17,7 @@
 query community ($path: String!) {
   community: community (path: $path) {
     title
-    icon
-    name
+    image
     location
     memberCount
     communityPurpose
@@ -33,7 +34,7 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.community.name
+      title: this.$page.community.title
     }
   }
 }
@@ -49,5 +50,9 @@ export default {
   border: 1px solid darkslategray;
   border-radius: 5px;
   display: inline;
+}
+
+div {
+  margin: 5px;
 }
 </style>
