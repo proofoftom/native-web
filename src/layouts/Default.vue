@@ -12,7 +12,7 @@
         <g-link class="nav__link" to="/login">Sign In</g-link>
       </nav>
     </header>
-    <div class="inner">
+    <div class="main">
       <slot/>
     </div>
   </div>
@@ -35,7 +35,7 @@ body {
 }
 
 .layout {
-  max-width: 900px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -63,11 +63,9 @@ nav {
   margin-left: 40px;
 }
 
-.inner {
-  max-width: 760px;
+.main {
+  max-width: 1024px;
+  width: 100%;
   align-self: center;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
 </style>
