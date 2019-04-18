@@ -1,7 +1,3 @@
-require('dotenv-flow').config({
-  default_node_env: 'development'
-});
-
 const axios = require('axios')
 
 module.exports = function (api) {
