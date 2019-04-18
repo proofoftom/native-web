@@ -12,8 +12,8 @@
     </div>
     <div class="actions">
       <!-- Todo: Check for auth and swap out link for Join Community link -->
-      <button @click="routerPush('login')">Join | $10.00</button>
-      <button @click="routerPush(community.path)">Go</button>
+      <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
+      <v-btn @click="routerPush(community.path)">Go</v-btn>
     </div>
   </div>
 </template>

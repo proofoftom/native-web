@@ -1,21 +1,28 @@
 <template>
-  <div class="layout">
+  <v-app class="layout">
     <header class="header">
-      <nav>
+      <nav class="subheading">
         <g-link to="/">
-          <g-image alt="Native Logo" class="logo" src="~/assets/images/ntv__logo--horizontal.png" width="150" fit="inside" quality="100" />
+          <g-image
+            alt="Native Logo"
+            class="logo"
+            src="~/assets/images/ntv__logo--horizontal.png"
+            width="175"
+            fit="inside"
+            quality="100"
+          />
         </g-link>
         <g-link class="nav__link" to="/communities">Communities</g-link>
         <g-link class="nav__link" to="/help">Help</g-link>
       </nav>
-      <nav>
+      <nav class="title">
         <g-link class="nav__link" to="/login">Sign In</g-link>
       </nav>
     </header>
     <div class="main">
       <slot/>
     </div>
-  </div>
+  </v-app>
 </template>
 
 <static-query>
