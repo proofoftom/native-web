@@ -68,4 +68,10 @@ nav {
   width: 100%;
   align-self: center;
 }
+
+@media (max-width: 768px) {
+  header {
+    align-self: center;
+  }
+}
 </style>
