@@ -4241,9 +4241,9 @@ graphql@^14.1.1:
     iterall "^1.2.2"
 
 gridsome@^0.5.0:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.7.tgz#1da9448fcad7f891fe98586496e7c5c9a1c593a4"
-  integrity sha512-i5xm9OlUy9GuqmzHym/G9rrU2u9bHT3zyKW83yMLFiTCKbLkSZX6/VV5LIdt/KVQfFAAyCaCpiZGwSoHFmn4bg==
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.8.tgz#aff05b732f0c628d6a7d3c3277821c64a05e5a75"
+  integrity sha512-O2LKoaxkBoCdQXkeqcFsJHlChlmiynBaaBV2SVgw/qQTpsZZ7sefJutCOMeS1H2l7Kst38r62ADx03FPEe47rQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.0.9"
@@ -9201,10 +9201,10 @@ vue-meta@^1.5.8:
     lodash.uniqueid "^4.0.1"
     object-assign "^4.1.1"
 
-vue-router@3.0.2, vue-router@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
-  integrity sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
+vue-router@^3.0.2:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.6.tgz#2e4f0f9cbb0b96d0205ab2690cfe588935136ac3"
+  integrity sha512-Ox0ciFLswtSGRTHYhGvx2L44sVbTPNS+uD2kRISuo8B39Y79rOo0Kw0hzupTmiVtftQYCZl87mwldhh2L9Aquw==
 
 vue-server-renderer@^2.6.6:
   version "2.6.10"

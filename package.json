@@ -15,9 +15,6 @@
     "style-loader": "^0.23.1",
     "vuetify": "^1.5.12"
   },
-  "resolutions": {
-    "gridsome/vue-router": "3.0.2"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "css-loader": "^2.1.1",
