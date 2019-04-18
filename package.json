@@ -11,6 +11,7 @@
     "@gridsome/plugin-critical": "^0.1.1",
     "axios": "^0.18.0",
     "gridsome": "^0.5.0",
+    "style-loader": "^0.23.1",
     "vuetify": "^1.5.12"
   },
   "resolutions": {
@@ -20,8 +21,6 @@
     "css-loader": "^2.1.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "style-resources-loader": "^1.2.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "webpack-node-externals": "^1.7.2"
