@@ -47,7 +47,6 @@ export default {
   display flex
   align-items stretch
   flex-direction row
-  justify-content space-between
   flex-wrap wrap
 
 @media (max-width 760px)

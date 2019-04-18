@@ -1,7 +1,7 @@
 <template>
   <Layout :title="$page.community.title">
     <img class="hero" :src="$page.community.image" width="100%" />
-    <h2>{{ $page.community.name }}</h2>
+    <h2>{{ $page.community.title }}</h2>
     <div class="communityInfo">
       <div class="location" v-html="$page.community.location" /> |
       <div class="memberCount">{{ $page.community.memberCount }} Members</div>

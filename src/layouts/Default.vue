@@ -1,27 +1,29 @@
 <template>
-  <v-app class="layout">
-    <header class="header">
-      <nav class="subheading">
+  <v-app class="app">
+    <v-toolbar height="100" app>
+      <nav class="mainNav subheading d-flex">
         <g-link to="/">
           <g-image
             alt="Native Logo"
-            class="logo"
             src="~/assets/images/ntv__logo--horizontal.png"
             width="175"
             fit="inside"
             quality="100"
           />
         </g-link>
-        <g-link class="nav__link" to="/communities">Communities</g-link>
-        <g-link class="nav__link" to="/help">Help</g-link>
+        <g-link to="/communities" class="flex">Communities</g-link>
+        <g-link to="/help">Help</g-link>
       </nav>
-      <nav class="title">
-        <g-link class="nav__link" to="/login">Sign In</g-link>
-      </nav>
-    </header>
-    <div class="main">
-      <slot/>
-    </div>
+      <v-spacer></v-spacer>
+      <v-btn icon large>
+        <v-icon large>account_circle</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <transition name="fade" appear>
+      <main>
+        <slot/>
+      </main>
+    </transition>
   </v-app>
 </template>
 
@@ -36,37 +38,33 @@ query {
 <style lang="stylus">
 @import '../assets/stylus/_globals';
 
-.layout
-  max-width 1280px
-  margin 0 auto
-  padding-left 20px
-  padding-right 20px
-  display flex
-  flex-direction column
-
-.header
-  display flex
-  justify-content space-between
-  margin-bottom 20px
-  height 100px
-
-nav
-  display flex
+.application--wrap
   align-items center
+  margin 20px
 
-.nav__link
-  font-family "Lucida Console", Monaco, monospace
-  text-decoration none
-  font-weight bold
-  color darkslategray
-  margin-left 40px
+.mainNav
+  align-items center
+  a
+    font-family "Lucida Console", Monaco, monospace
+    text-decoration none
+    font-weight bold
+    color darkslategray
+    margin 0 20px
 
-.main
+main
   max-width 1024px
   width 100%
-  align-self center
+  margin-top 150px
 
+// Media queries
 @media (max-width 768px)
   header
     align-self center
+
+// Animations
+.fade-enter-active
+  transition opacity .5s
+
+.fade-enter
+  opacity 0
 </style>

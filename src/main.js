@@ -6,11 +6,17 @@ import '~/plugins/vuetify'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
+  // Get Meterial Icons
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 
+  // Simple route guard
   router.beforeEach((to, from, next) => {
-    // Do stuff before next page load
     if (to.path == '/') {
       next('/communities')
     } else {

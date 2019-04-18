@@ -1,6 +1,6 @@
 <template>
   <div class="communityCard">
-    <img class="hero" :src="community.image" width="100%" />
+    <img :src="community.image" height="175px" />
     <h3>{{ community.title }}</h3>
     <div class="communityInfo">
       <div class="location" v-html="community.location" /> |
@@ -39,14 +39,12 @@ export default {
   flex-direction column
   flex 1
   min-width 295px
-  padding 10px
   margin 10px
   border 1px solid darkslategray
-  border-radius 5px
+  border-radius 3px
   box-sizing border-box
-
-div
-  margin 5px
+  div
+    margin 5px
 
 .location
 .memberCount 
@@ -66,9 +64,4 @@ div
   align-content stretch
   align-items flex-end
   flex 2
-
-
-@media (max-width 760px)
-  .communityCard
-    margin 0 0 1rem 0
 </style>
