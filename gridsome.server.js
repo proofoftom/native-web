@@ -1,9 +1,12 @@
+require('dotenv-flow').config({
+  default_node_env: 'development'
+});
+
 const axios = require('axios')
 
 module.exports = function (api) {
   api.loadSource(async store => {
-    // Todo: Use .env file to define host
-    const { data } = await axios.get('http://localhost:3000/communities')
+    const { data } = await axios.get(process.env.API_URL + '/communities')
 
     const contentType = store.addContentType({
       typeName: 'Community',
