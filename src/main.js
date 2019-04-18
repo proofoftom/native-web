@@ -16,13 +16,13 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   // Simple route guard
-  if (isClient) {
-    router.beforeEach((to, from, next) => {
-      if (to.path == '/') {
-        next('/communities')
-      } else {
-        next()
-      }
-    })
-  }
+  // if (isClient) {
+  //   router.beforeEach((to, from, next) => {
+  //     if (to.path == '/join' && user.auth != true) {
+  //       next('/login')
+  //     } else {
+  //       next()
+  //     }
+  //   })
+  // }
 }
