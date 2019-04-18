@@ -27,57 +27,48 @@ export default {
   methods: {
     routerPush(path) {
       this.$router.push(path)
-    },
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
-.communityCard {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 295px;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid darkslategray;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
+.communityCard
+  display flex
+  flex-direction column
+  flex 1
+  min-width 295px
+  padding 10px
+  margin 10px
+  border 1px solid darkslategray
+  border-radius 5px
+  box-sizing border-box
 
-div {
-  margin: 5px;
-}
+div
+  margin 5px
 
-.location,
-.memberCount {
-  display: inline;
-}
+.location
+.memberCount 
+  display inline
 
-.subtitle {
-  padding: 5px;
-  border: 1px solid darkslategray;
-  border-radius: 5px;
-  display: inline;
-}
 
-.actions {
-  display: flex;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: flex-end;
-  flex: 2;
-}
+.subtitle 
+  padding 5px
+  border 1px solid darkslategray
+  border-radius 5px
+  display inline
 
-button {
-  margin-top: 5px;
-  padding: 5px;
-}
 
-@media (max-width: 760px) {
-  .communityCard {
-    margin: 0 0 1rem 0;
-  }
-}
+.actions 
+  display flex
+  justify-content space-between
+  align-content stretch
+  align-items flex-end
+  flex 2
+
+
+@media (max-width 760px)
+  .communityCard
+    margin 0 0 1rem 0
 </style>

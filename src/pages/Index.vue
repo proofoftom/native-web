@@ -23,8 +23,7 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="stylus" scoped>
+.home-links a
+  margin-right 1rem
 </style>

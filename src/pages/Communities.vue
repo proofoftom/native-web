@@ -42,18 +42,15 @@ export default {
 }
 </script>
 
-<style scoped>
-.communities {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+<style lang="stylus" scoped>
+.communities
+  display flex
+  align-items stretch
+  flex-direction row
+  justify-content space-between
+  flex-wrap wrap
 
-@media (max-width: 760px) {
-  .communities {
-    flex-direction: column;
-  }
-}
+@media (max-width 760px)
+  .communities
+    flex-direction column
 </style>

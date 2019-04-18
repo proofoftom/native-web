@@ -40,19 +40,14 @@ export default {
 }
 </script>
 
-<style scoped>
-.location, .memberCount {
-  display: inline;
-}
+<style lang="stylus" scoped>
+.location
+.memberCount
+  display inline
 
-.subtitle {
-  padding: 5px;
-  border: 1px solid darkslategray;
-  border-radius: 5px;
-  display: inline;
-}
-
-div {
-  margin: 5px;
-}
+.subtitle
+  padding 5px
+  border 1px solid darkslategray
+  border-radius 5px
+  display inline
 </style>

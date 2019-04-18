@@ -29,51 +29,37 @@ query {
 <style lang="stylus">
 @import '../assets/stylus/_globals';
 
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
+.layout
+  max-width 1280px
+  margin 0 auto
+  padding-left 20px
+  padding-right 20px
+  display flex
+  flex-direction column
 
-.layout {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  flex-direction: column;
-}
+.header
+  display flex
+  justify-content space-between
+  margin-bottom 20px
+  height 100px
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  height: 80px;
-}
+nav
+  display flex
+  align-items center
 
-nav {
-  display: flex;
-  align-items: center;
-}
+.nav__link
+  font-family "Lucida Console", Monaco, monospace
+  text-decoration none
+  font-weight bold
+  color darkslategray
+  margin-left 40px
 
-.nav__link {
-  font-family: 'Courier New', Courier, monospace;
-  text-decoration: none;
-  font-weight: bold;
-  color: darkslategray;
-  margin-left: 40px;
-}
+.main
+  max-width 1024px
+  width 100%
+  align-self center
 
-.main {
-  max-width: 1024px;
-  width: 100%;
-  align-self: center;
-}
-
-@media (max-width: 768px) {
-  header {
-    align-self: center;
-  }
-}
+@media (max-width 768px)
+  header
+    align-self center
 </style>
