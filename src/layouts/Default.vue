@@ -3,7 +3,7 @@
     <header class="header">
       <nav>
         <g-link to="/">
-          <g-image alt="Native Logo" class="logo" src="~/images/ntv__logo--horizontal.png" width="150" fit="inside" quality="100" />
+          <g-image alt="Native Logo" class="logo" src="~/assets/images/ntv__logo--horizontal.png" width="150" fit="inside" quality="100" />
         </g-link>
         <g-link class="nav__link" to="/communities">Communities</g-link>
         <g-link class="nav__link" to="/help">Help</g-link>
