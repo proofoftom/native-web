@@ -1,21 +1,23 @@
 <template>
-  <div class="communityCard">
-    <img :src="community.image" height="175px" />
-    <h3>{{ community.title }}</h3>
-    <div class="communityInfo">
-      <div class="location" v-html="community.location" /> |
-      <div class="memberCount">{{ community.memberCount }} Members</div>
-    </div>
-    <div class="communityPurpose" v-html="community.communityPurpose" />
-    <div class="subtitles">
-      <div class="subtitle" v-html="community.subtitle" />
-    </div>
-    <div class="actions">
-      <!-- Todo: Check for auth and swap out link for Join Community link -->
-      <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
-      <v-btn @click="routerPush(community.path)">Go</v-btn>
-    </div>
-  </div>
+  <v-flex xs12 sm6 md4>
+    <v-card class="community-card">
+      <img :src="community.image" width="100%" />
+      <h3>{{ community.title }}</h3>
+      <div class="community-info">
+        <div class="location" v-html="community.location" /> |
+        <div class="member-count">{{ community.memberCount }} Members</div>
+      </div>
+      <div class="community-purpose" v-html="community.communityPurpose" />
+      <div class="subtitles">
+        <div class="subtitle" v-html="community.subtitle" />
+      </div>
+      <div class="actions">
+        <!-- Todo: Check for auth and swap out link for Join Community link -->
+        <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
+        <v-btn @click="routerPush(community.path)">Go</v-btn>
+      </div>
+    </v-card>
+  </v-flex>
 </template>
 
 <script>
@@ -33,22 +35,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
-.communityCard
-  display flex
-  flex-direction column
-  flex 1
-  min-width 295px
-  margin 10px
-  border 1px solid darkslategray
-  border-radius 3px
-  box-sizing border-box
-  div
-    margin 5px
-
-.location
-.memberCount 
-  display inline
 
 .subtitle 
   padding 5px

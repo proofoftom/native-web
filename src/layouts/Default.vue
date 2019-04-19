@@ -52,7 +52,7 @@ query {
 main
   max-width 1024px
   width 100%
-  margin-top 150px
+  margin-top 125px
 
 // Media queries
 @media (max-width 768px)

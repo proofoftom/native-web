@@ -2,7 +2,11 @@ import Vue from 'vue'
 import Vuetify, {
   VApp,
   VBtn,
+  VCard,
+  VContainer,
+  VFlex,
   VIcon,
+  VLayout,
   VSpacer,
   VToolbar
 } from 'vuetify/lib'
@@ -12,7 +16,11 @@ Vue.use(Vuetify, {
   components: {
     VApp,
     VBtn,
+    VCard,
+    VContainer,
+    VFlex,
     VIcon,
+    VLayout,
     VSpacer,
     VToolbar
   }

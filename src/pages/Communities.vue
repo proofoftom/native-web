@@ -1,13 +1,15 @@
 <template>
   <Layout>
-    <h1>Explore Communities</h1>
-    <div class="communities">
-      <CommunityCard
-        v-for="community in $page.communities.edges"
-        :key="community.node.id"
-        :community="community.node"
-      />
-    </div>
+    <v-container grid-list-lg class="communities">
+      <h1>Explore Communities</h1>
+      <v-layout row wrap>
+        <CommunityCard
+          v-for="community in $page.communities.edges"
+          :key="community.node.id"
+          :community="community.node"
+        />
+      </v-layout>
+    </v-container>
   </Layout>
 </template>
 
@@ -43,15 +45,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
-.communities
-  display flex
-  align-items stretch
-  flex-direction row
-  flex-wrap wrap
-
-@media (max-width 760px)
-  .communities
-    flex-direction column
 
 </style>
