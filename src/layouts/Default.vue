@@ -1,27 +1,31 @@
 <template>
   <v-app class="app">
-    <v-toolbar height="100" app>
-      <nav class="main-nav subheading d-flex">
-        <g-link to="/">
-          <img
-            alt="Native Logo"
-            src="../assets/images/ntv__logo--horizontal.png"
-            width="175px"
-          />
-        </g-link>
-        <g-link to="/communities" class="flex">Communities</g-link>
-        <g-link to="/help">Help</g-link>
-      </nav>
-      <v-spacer></v-spacer>
-      <v-btn icon large>
-        <v-icon large>account_circle</v-icon>
-      </v-btn>
-    </v-toolbar>
-    <transition name="fade" appear>
-      <main>
-        <slot/>
-      </main>
-    </transition>
+    <v-container grid-list-lg>
+      <v-toolbar height="100" app>
+        <nav class="main-nav subheading d-flex">
+          <g-link to="/">
+            <img
+              alt="Native Logo"
+              src="../assets/images/ntv__logo--horizontal.png"
+              width="175px"
+            />
+          </g-link>
+          <g-link to="/communities" class="flex">Communities</g-link>
+          <g-link to="/help">Help</g-link>
+        </nav>
+        <v-spacer></v-spacer>
+        <v-btn icon large>
+          <g-link to="/login">
+            <v-icon large>account_circle</v-icon>
+          </g-link>
+        </v-btn>
+      </v-toolbar>
+      <transition name="fade" appear>
+        <main>
+          <slot/>
+        </main>
+      </transition>
+    </v-container>
   </v-app>
 </template>
 

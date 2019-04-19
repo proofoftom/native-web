@@ -1,15 +1,13 @@
 <template>
   <Layout>
-    <v-container grid-list-lg class="communities">
-      <h1>Explore Communities</h1>
-      <v-layout row wrap>
-        <CommunityCard
-          v-for="community in $page.communities.edges"
-          :key="community.node.id"
-          :community="community.node"
-        />
-      </v-layout>
-    </v-container>
+    <h1>Explore Communities</h1>
+    <v-layout row wrap class="communities">
+      <CommunityCard
+        v-for="community in $page.communities.edges"
+        :key="community.node.id"
+        :community="community.node"
+      />
+    </v-layout>
   </Layout>
 </template>
 
