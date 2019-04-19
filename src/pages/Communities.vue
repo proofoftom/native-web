@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 .communities
   display flex
   align-items stretch
@@ -52,4 +53,5 @@ export default {
 @media (max-width 760px)
   .communities
     flex-direction column
+
 </style>

@@ -50,13 +50,10 @@ export default {
 .memberCount 
   display inline
 
-
 .subtitle 
   padding 5px
   border 1px solid darkslategray
-  border-radius 5px
   display inline
-
 
 .actions 
   display flex
@@ -64,4 +61,5 @@ export default {
   align-content stretch
   align-items flex-end
   flex 2
+
 </style>
