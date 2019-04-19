@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Sign Up</h1>
+    <h1>Register</h1>
     <RegisterForm />
   </Layout>
 </template>
@@ -10,7 +10,7 @@ import RegisterForm from "~/components/forms/RegisterForm";
 
 export default {
   metaInfo: {
-    title: "Sign Up"
+    title: "Register"
   },
   components: {
     RegisterForm
