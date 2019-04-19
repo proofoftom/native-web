@@ -3,12 +3,10 @@
     <v-toolbar height="100" app>
       <nav class="mainNav subheading d-flex">
         <g-link to="/">
-          <g-image
+          <img
             alt="Native Logo"
-            src="~/assets/images/ntv__logo--horizontal.png"
-            width="175"
-            fit="inside"
-            quality="100"
+            src="../assets/images/ntv__logo--horizontal.png"
+            width="175px"
           />
         </g-link>
         <g-link to="/communities" class="flex">Communities</g-link>
