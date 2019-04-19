@@ -28,6 +28,7 @@ query community ($path: String!) {
 
 <script>
 import Layout from '~/layouts/Default.vue'
+
 export default {
   components: {
     Layout
@@ -41,6 +42,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 .location
 .member-count
   display inline
@@ -50,4 +52,5 @@ export default {
   border 1px solid darkslategray
   border-radius 5px
   display inline
+
 </style>
