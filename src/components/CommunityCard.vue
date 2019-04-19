@@ -1,22 +1,29 @@
 <template>
   <v-flex xs12 sm6 md4>
     <v-card class="community-card">
-      <img :src="community.image" width="100%" />
-      <v-container>
-        <h3>{{ community.title }}</h3>
-        <div class="community-info">
-          <div class="location" v-html="community.location" /> |
-          <div class="member-count">{{ community.memberCount }} Members</div>
+      <v-responsive width="100%" height="200px">
+        <img :src="community.image" width="100%" />
+      </v-responsive>
+      <v-card-text>
+        <div class="title">{{ community.title }}</div>
+        <div class="community-memeber-info">
+          <div class="location pt-1" v-html="community.location" />
+          <v-divider></v-divider>
+          <div class="member-count pt-2">{{ community.memberCount }} Members</div>
         </div>
+      </v-card-text>
+      <v-card-text class="pt-0">
         <div class="community-purpose" v-html="community.communityPurpose" />
-        <div class="subtitles">
-          <div class="subtitle" v-html="community.subtitle" />
-        </div>
-        <div class="actions">
-          <!-- Todo: Check for auth and swap out link for Join Community link -->
-          <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
-          <v-btn @click="routerPush(community.path)">Go</v-btn>
-        </div>
+      </v-card-text>
+      <v-container class="subtitles pt-0 px-3">
+        <div class="subtitle" v-html="community.subtitle" />
+      </v-container>
+      <v-container class="actions pt-0 px-2">
+        <v-layout>
+            <!-- Todo: Check for auth and swap out link for Join Community link -->
+            <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
+            <v-btn @click="routerPush(community.path)">Go</v-btn>
+        </v-layout>
       </v-container>
     </v-card>
   </v-flex>
@@ -43,11 +50,10 @@ export default {
   border 1px solid darkslategray
   display inline
 
-.actions 
-  display flex
-  justify-content space-between
-  align-content stretch
-  align-items flex-end
-  flex 2
+.actions .layout
+  justify-content center
+
+.v-btn
+  text-transform none
 
 </style>

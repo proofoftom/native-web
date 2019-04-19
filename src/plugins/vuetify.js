@@ -3,10 +3,13 @@ import Vuetify, {
   VApp,
   VBtn,
   VCard,
+  VCardText,
   VContainer,
+  VDivider,
   VFlex,
   VIcon,
   VLayout,
+  VResponsive,
   VSpacer,
   VToolbar
 } from 'vuetify/lib'
@@ -17,10 +20,13 @@ Vue.use(Vuetify, {
     VApp,
     VBtn,
     VCard,
+    VCardText,
     VContainer,
+    VDivider,
     VFlex,
     VIcon,
     VLayout,
+    VResponsive,
     VSpacer,
     VToolbar
   }
