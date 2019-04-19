@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex xs12 sm6>
-      <v-form >
+      <v-form>
         <g-link to="/register" class="subheading">Create a New Account</g-link>
         <v-text-field label="Username" v-model="username"></v-text-field>
         <v-text-field label="Password" v-model="password"></v-text-field>
@@ -14,17 +14,17 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        username: '',
-        password: ''
-      }
-    },
-    methods: {
-      loginUser() {
-        // Do some user auth stuff here...
-      }
-    },
+export default {
+  data() {
+    return {
+      username: "",
+      password: ""
+    };
+  },
+  methods: {
+    loginUser() {
+      // Do some user auth stuff here...
+    }
   }
+};
 </script>

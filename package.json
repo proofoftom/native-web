@@ -36,6 +36,7 @@
     },
     "extends": [
       "plugin:vue/strongly-recommended",
+      "@vue/airbnb",
       "@vue/prettier"
     ],
     "rules": {},

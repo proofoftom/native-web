@@ -3,7 +3,8 @@
     <img class="hero" :src="$page.community.image" width="100%" />
     <h2>{{ $page.community.title }}</h2>
     <div class="community-info">
-      <div class="location" v-html="$page.community.location" /> |
+      <div class="location" v-html="$page.community.location" />
+      <v-divider />
       <div class="member-count">{{ $page.community.memberCount }} Members</div>
     </div>
     <div class="community-purpose" v-html="$page.community.communityPurpose" />
@@ -27,22 +28,21 @@ query community ($path: String!) {
 </page-query>
 
 <script>
-import Layout from '~/layouts/Default.vue'
+import Layout from "~/layouts/Default.vue";
 
 export default {
   components: {
     Layout
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.community.title
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="stylus" scoped>
-
 .location
 .member-count
   display inline
@@ -52,5 +52,4 @@ export default {
   border 1px solid darkslategray
   border-radius 5px
   display inline
-
 </style>

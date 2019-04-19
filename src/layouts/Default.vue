@@ -22,7 +22,7 @@
       </v-toolbar>
       <transition name="fade" appear>
         <main>
-          <slot/>
+          <slot />
         </main>
       </transition>
     </v-container>
@@ -69,5 +69,4 @@ main
 
 .fade-enter
   opacity 0
-
 </style>

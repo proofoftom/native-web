@@ -34,10 +34,10 @@ import CommunityCard from "~/components/cards/CommunityCard";
 
 export default {
   metaInfo: {
-    title: 'Communities'
+    title: "Communities"
   },
   components: {
-    CommunityCard,
-  },
-}
+    CommunityCard
+  }
+};
 </script>

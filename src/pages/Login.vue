@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import LoginForm from '~/components/forms/LoginForm'
+import LoginForm from "~/components/forms/LoginForm";
 
 export default {
   metaInfo: {
-    title: 'Sign In'
+    title: "Sign In"
   },
   components: {
     LoginForm
   }
-}
+};
 </script>
