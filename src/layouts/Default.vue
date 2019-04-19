@@ -1,7 +1,7 @@
 <template>
   <v-app class="app">
     <v-toolbar height="100" app>
-      <nav class="mainNav subheading d-flex">
+      <nav class="main-nav subheading d-flex">
         <g-link to="/">
           <img
             alt="Native Logo"
@@ -40,7 +40,7 @@ query {
   align-items center
   margin 20px
 
-.mainNav
+.main-nav
   align-items center
   a
     font-family "Lucida Console", Monaco, monospace

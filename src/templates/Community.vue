@@ -3,11 +3,11 @@
     <v-container>
       <img class="hero" :src="$page.community.image" width="100%" />
       <h2>{{ $page.community.title }}</h2>
-      <div class="communityInfo">
+      <div class="community-info">
         <div class="location" v-html="$page.community.location" /> |
-        <div class="memberCount">{{ $page.community.memberCount }} Members</div>
+        <div class="member-count">{{ $page.community.memberCount }} Members</div>
       </div>
-      <div class="communityPurpose" v-html="$page.community.communityPurpose" />
+      <div class="community-purpose" v-html="$page.community.communityPurpose" />
       <div class="subtitles">
         <div class="subtitle" v-html="$page.community.subtitle" />
       </div>
@@ -44,7 +44,7 @@ export default {
 
 <style lang="stylus" scoped>
 .location
-.memberCount
+.member-count
   display inline
 
 .subtitle
