@@ -36,7 +36,6 @@
     },
     "extends": [
       "plugin:vue/strongly-recommended",
-      "@vue/airbnb",
       "@vue/prettier"
     ],
     "rules": {},
@@ -44,6 +43,11 @@
       "parser": "babel-eslint"
     }
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
