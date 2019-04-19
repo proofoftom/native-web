@@ -58,11 +58,6 @@ main
   width 100%
   margin-top 125px
 
-// Media queries
-@media (max-width 768px)
-  header
-    align-self center
-
 // Animations
 .fade-enter-active
   transition opacity .5s
