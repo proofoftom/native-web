@@ -1,21 +1,28 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <nav>
+  <v-app class="app">
+    <v-toolbar height="100" app>
+      <nav class="mainNav subheading d-flex">
         <g-link to="/">
-          <g-image alt="Native Logo" class="logo" src="~/images/ntv__logo--horizontal.png" width="150" fit="inside" quality="100" />
+          <img
+            alt="Native Logo"
+            src="../assets/images/ntv__logo--horizontal.png"
+            width="175px"
+          />
         </g-link>
-        <g-link class="nav__link" to="/communities">Communities</g-link>
-        <g-link class="nav__link" to="/help">Help</g-link>
+        <g-link to="/communities" class="flex">Communities</g-link>
+        <g-link to="/help">Help</g-link>
       </nav>
-      <nav>
-        <g-link class="nav__link" to="/login">Sign In</g-link>
-      </nav>
-    </header>
-    <div class="main">
-      <slot/>
-    </div>
-  </div>
+      <v-spacer></v-spacer>
+      <v-btn icon large>
+        <v-icon large>account_circle</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <transition name="fade" appear>
+      <main>
+        <slot/>
+      </main>
+    </transition>
+  </v-app>
 </template>
 
 <static-query>
@@ -26,46 +33,37 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
+<style lang="stylus">
+@import '../assets/stylus/_globals';
 
-.layout {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  flex-direction: column;
-}
+.application--wrap
+  align-items center
+  margin 20px
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  height: 80px;
-}
+.mainNav
+  align-items center
+  a
+    font-family "Lucida Console", Monaco, monospace
+    text-decoration none
+    font-weight bold
+    color darkslategray
+    margin 0 20px
 
-nav {
-  display: flex;
-  align-items: center;
-}
+main
+  max-width 1024px
+  width 100%
+  margin-top 125px
 
-.nav__link {
-  font-family: 'Courier New', Courier, monospace;
-  text-decoration: none;
-  font-weight: bold;
-  color: darkslategray;
-  margin-left: 40px;
-}
+// Media queries
+@media (max-width 768px)
+  header
+    align-self center
 
-.main {
-  max-width: 1024px;
-  width: 100%;
-  align-self: center;
-}
+// Animations
+.fade-enter-active
+  transition opacity .5s
+
+.fade-enter
+  opacity 0
+
 </style>

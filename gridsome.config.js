@@ -9,5 +9,5 @@ module.exports = {
   siteDescription: 'Incentivize and Scale Digital Communities.',
   siteUrl: 'https://beta.nativeproject.one',
   titleTemplate: 'Native - %s',
-  plugins: []
+  plugins: [],
 }
