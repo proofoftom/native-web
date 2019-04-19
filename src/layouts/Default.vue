@@ -50,7 +50,7 @@ query {
     margin 0 20px
 
 main
-  max-width 1024px
+  max-width 1280px
   width 100%
   margin-top 125px
 
