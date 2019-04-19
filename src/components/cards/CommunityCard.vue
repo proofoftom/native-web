@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Community',
+  name: 'CommunityCard',
   props: {
     community: {}
   },
@@ -52,8 +52,5 @@ export default {
 
 .actions .layout
   justify-content center
-
-.v-btn
-  text-transform none
 
 </style>

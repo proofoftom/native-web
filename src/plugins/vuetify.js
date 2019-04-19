@@ -7,10 +7,12 @@ import Vuetify, {
   VContainer,
   VDivider,
   VFlex,
+  VForm,
   VIcon,
   VLayout,
   VResponsive,
   VSpacer,
+  VTextField,
   VToolbar
 } from 'vuetify/lib'
 import 'vuetify/src/stylus/main.styl'
@@ -24,10 +26,12 @@ Vue.use(Vuetify, {
     VContainer,
     VDivider,
     VFlex,
+    VForm,
     VIcon,
     VLayout,
     VResponsive,
     VSpacer,
+    VTextField,
     VToolbar
   }
 })
