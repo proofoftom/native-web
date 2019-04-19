@@ -54,6 +54,6 @@ export default {
   border 1px solid darkslategray
   display inline
 
-.actions .layout {
+.actions .layout
   justify-content center
 </style>

@@ -5,6 +5,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
+    "lint": "eslint src",
     "now-build": "yarn build"
   },
   "dependencies": {

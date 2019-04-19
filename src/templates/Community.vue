@@ -3,13 +3,19 @@
     <img class="hero" :src="$page.community.image" width="100%" />
     <h2>{{ $page.community.title }}</h2>
     <div class="community-info">
-      <div class="location" v-html="$page.community.location" />
+      <div class="location">
+        {{ $page.community.location }}
+      </div>
       <v-divider />
       <div class="member-count">{{ $page.community.memberCount }} Members</div>
     </div>
-    <div class="community-purpose" v-html="$page.community.communityPurpose" />
+    <div class="community-purpose">
+      {{ $page.community.communityPurpose }}
+    </div>
     <div class="subtitles">
-      <div class="subtitle" v-html="$page.community.subtitle" />
+      <div class="subtitle">
+        {{ $page.community.subtitle }}
+      </div>
     </div>
   </Layout>
 </template>
