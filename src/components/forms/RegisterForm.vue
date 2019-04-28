@@ -33,14 +33,14 @@ export default {
     createUser() {
       const self = this;
       axios
-        .post("https://api.nativeproject.one/user/register", {
-          username: this.username,
-          password: this.password
+        .post("http://localhost:3000/user/register", this.$data)
+        .then(function(response) {
+          localStorage.token = response.data.token;
+          self.$router.push("/communities");
         })
-        .then(function() {
-          self.$router.push("/login");
-        })
-        .catch(function() {});
+        .catch(function(error) {
+          localStorage.error = error.message;
+        });
     }
   },
   components: {
