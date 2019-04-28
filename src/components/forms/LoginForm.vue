@@ -28,7 +28,7 @@ export default {
     loginUser() {
       const self = this;
       axios
-        .post(process.env.API_URL + "/user/login", {
+        .post("https://api.nativeproject.one/user/login", {
           username: this.username,
           password: this.password
         })

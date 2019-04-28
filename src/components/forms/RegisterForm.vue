@@ -33,7 +33,7 @@ export default {
     createUser() {
       const self = this;
       axios
-        .post(process.env.API_URL + "/user/register", {
+        .post("https://api.nativeproject.one/user/register", {
           username: this.username,
           password: this.password
         })
