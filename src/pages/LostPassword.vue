@@ -1,8 +1,8 @@
 <template>
-  <Layout>
+  <layout>
     <h1>Lost Password</h1>
-    <LostPasswordForm />
-  </Layout>
+    <lost-password-form />
+  </layout>
 </template>
 
 <script>

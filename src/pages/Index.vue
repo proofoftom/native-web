@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <layout>
     <v-layout text-xs-center wrap>
       <v-flex xs12>
         <v-img
@@ -23,7 +23,7 @@
         </p>
       </v-flex>
     </v-layout>
-  </Layout>
+  </layout>
 </template>
 
 <script>

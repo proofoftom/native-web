@@ -1,8 +1,8 @@
 <template>
-  <Layout>
+  <layout>
     <h1>Register</h1>
-    <RegisterForm />
-  </Layout>
+    <register-form />
+  </layout>
 </template>
 
 <script>
