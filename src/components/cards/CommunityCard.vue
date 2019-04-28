@@ -2,7 +2,6 @@
   <v-flex xs12 sm6 md4>
     <v-hover>
       <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
-        <!-- <v-responsive width="100%" height="200px"> -->
         <v-img :src="community.image" height="200px">
           <v-layout
             align-end
@@ -21,7 +20,6 @@
             </v-flex>
           </v-layout>
         </v-img>
-        <!-- </v-responsive> -->
         <v-card-text>
           <div>{{ community.communityPurpose }}</div>
         </v-card-text>

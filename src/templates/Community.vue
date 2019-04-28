@@ -17,17 +17,20 @@
         </v-flex>
       </v-layout>
     </v-img>
-    <v-layout mt-2 wrap>
-      <v-flex xs12 sm4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis quae odio neque, officia facilis atque a repellat veniam eius. Voluptas accusamus porro cumque blanditiis atque exercitationem officiis labore error.
-      </v-flex>
-      <v-flex xs12 sm4>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, animi eaque! Aut eligendi, reiciendis velit itaque temporibus error veritatis libero harum, quam similique nostrum inventore quia deleniti ullam consectetur exercitationem.
-      </v-flex>
-      <v-flex xs12 sm4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae accusamus voluptatem recusandae obcaecati eaque nihil nesciunt expedita nulla, molestiae iste debitis dolores quis, eveniet excepturi assumenda cumque quidem reiciendis.
-      </v-flex>
-    </v-layout>
+    <v-tabs>
+      <v-tab>
+        <About />
+      </v-tab>
+      <v-tab>
+        <Tasks />
+      </v-tab>
+      <v-tab>
+        <Votes />
+      </v-tab>
+      <v-tab>
+        <Projects />
+      </v-tab>
+    </v-tabs>
   </layout>
 </template>
 
@@ -45,6 +48,13 @@ query community ($path: String!) {
 </page-query>
 
 <script>
+import {
+  About,
+  Projects,
+  Tasks,
+  Votes
+} from "~/components/cards/CommunityDetails";
+
 export default {
   metaInfo() {
     return {
@@ -62,6 +72,12 @@ export default {
           return "500px";
       }
     }
+  },
+  components: {
+    About,
+    Projects,
+    Tasks,
+    Votes
   }
 };
 </script>
