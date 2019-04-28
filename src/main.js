@@ -18,10 +18,16 @@ export default function(Vue, { head, isClient, router }) {
   if (isClient) {
     router.beforeEach((to, from, next) => {
       // Check auth conditions
-      const whitelistedPaths = ["/", "/login", "/register", "/lost-password"];
+      const pathsWhitelist = [
+        "/",
+        "/login",
+        "/register",
+        "/lost-password",
+        "/help"
+      ];
       if (
-        // Not in whitelisted paths
-        !whitelistedPaths.includes(to.path) &&
+        // Not in whitelist paths
+        !pathsWhitelist.includes(to.path) &&
         // No (or bad) token
         (!localStorage.token || localStorage.token.length !== 161)
       ) {

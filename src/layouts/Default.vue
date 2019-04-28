@@ -11,6 +11,7 @@
             />
           </g-link>
           <g-link to="/communities" class="flex">Communities</g-link>
+          <g-link to="/help" class="flex">Help</g-link>
         </v-toolbar-items>
         <v-spacer></v-spacer>
         <v-btn icon large>
