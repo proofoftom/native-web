@@ -2,7 +2,7 @@
   <v-app class="app">
     <v-container grid-list-lg>
       <v-toolbar height="100" app>
-        <nav class="main-nav subheading d-flex">
+        <v-toolbar-items class="main-nav subheading">
           <g-link to="/">
             <img
               alt="Native Logo"
@@ -13,7 +13,7 @@
           <g-link to="/communities" class="flex">Communities</g-link>
           <a href="https://chat.nativeproject.one" target="_blank">Chat</a>
           <a href="https://forum.nativeproject.one" target="_blank">Forum</a>
-        </nav>
+        </v-toolbar-items>
         <v-spacer></v-spacer>
         <v-btn icon large>
           <g-link to="/login">
@@ -45,7 +45,6 @@ query {
   align-items center
   a
     font-family "Lucida Console", Monaco, monospace
-    text-decoration none
     font-weight bold
     margin 0 20px
 

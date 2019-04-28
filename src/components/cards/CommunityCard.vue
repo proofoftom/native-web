@@ -7,8 +7,14 @@
         :class="`elevation-${hover ? 12 : 2}`"
       >
         <!-- <v-responsive width="100%" height="200px"> -->
-        <v-img :src="community.image" height="200px">
-          <v-layout align-end fill-height white--text pa-2>
+        <v-img :src="community.image" height="200px" >
+          <v-layout
+            align-end
+            fill-height
+            white--text
+            pa-2
+            class="bottom-gradient"
+          >
             <v-flex>
               <div class="title font-weight-light">{{ community.title }}</div>
               <div class="community-memeber-info">
@@ -68,4 +74,8 @@ export default {
 
 .community-memeber-info > *
   display inline
+
+.bottom-gradient
+  background-image linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.666))
+  height 210px
 </style>
