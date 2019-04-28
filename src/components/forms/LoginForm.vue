@@ -1,13 +1,13 @@
 <template>
   <v-layout>
-    <v-flex xs12 sm6>
+    <flex-logo />
+    <v-flex xs12 sm5>
       <v-form>
         <g-link to="/register" class="subheading">Create a New Account</g-link>
         <v-text-field label="Username" v-model="username"></v-text-field>
         <v-text-field label="Password" v-model="password"></v-text-field>
+        <v-btn class="green-button" @click="loginUser()">Login</v-btn>
         <g-link to="/lost-password" class="caption">Lost Password?</g-link>
-        <v-spacer></v-spacer>
-        <v-btn class="mt-4" @click="loginUser()">Login</v-btn>
       </v-form>
     </v-flex>
   </v-layout>
@@ -15,6 +15,7 @@
 
 <script>
 import axios from "axios";
+import FlexLogo from "./FlexLogo";
 
 export default {
   data() {
@@ -27,7 +28,7 @@ export default {
     loginUser() {
       const self = this;
       axios
-        .post("http://localhost:3000/user/login", {
+        .post(process.env.API_URL + "/user/login", {
           username: this.username,
           password: this.password
         })
@@ -36,6 +37,9 @@ export default {
         })
         .catch(function() {});
     }
+  },
+  components: {
+    FlexLogo
   }
 };
 </script>
