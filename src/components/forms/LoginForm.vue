@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -23,7 +25,16 @@ export default {
   },
   methods: {
     loginUser() {
-      // Do some user auth stuff here...
+      const self = this;
+      axios
+        .post('http://localhost:3000/user/login', {
+          username: this.username,
+          password: this.password
+        })
+        .then(function() {
+          self.$router.push("/communities");
+        })
+        .catch(function() {});
     }
   }
 };
