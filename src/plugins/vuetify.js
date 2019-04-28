@@ -15,7 +15,8 @@ import Vuetify, {
   VResponsive,
   VSpacer,
   VTextField,
-  VToolbar
+  VToolbar,
+  VToolbarItems
 } from "vuetify/lib";
 import "vuetify/src/stylus/main.styl";
 
@@ -36,6 +37,7 @@ Vue.use(Vuetify, {
     VResponsive,
     VSpacer,
     VTextField,
-    VToolbar
+    VToolbar,
+    VToolbarItems
   }
 });
