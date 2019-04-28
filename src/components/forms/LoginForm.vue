@@ -3,11 +3,15 @@
     <flex-logo />
     <v-flex xs12 sm5>
       <v-form>
-        <g-link to="/register" class="subheading">Create a New Account</g-link>
+        
         <v-text-field label="Username" v-model="username"></v-text-field>
         <v-text-field label="Password" v-model="password"></v-text-field>
         <v-btn class="green-button" @click="loginUser()">Login</v-btn>
         <g-link to="/lost-password" class="caption">Lost Password?</g-link>
+        <v-flex>Or</v-flex>
+        <g-link to="/register" class="subheading">
+          <v-btn class="green-button">Create a New Account</v-btn>
+        </g-link>
       </v-form>
     </v-flex>
   </v-layout>
