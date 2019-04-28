@@ -3,14 +3,14 @@
     <flex-logo />
     <v-flex xs12 sm5>
       <v-form>
-        <g-link to="/login" class="subheading">
-          Sign in with another account
-        </g-link>
         <v-text-field label="Username" v-model="username" />
         <v-text-field label="Email" v-model="email" />
         <v-text-field label="Password" v-model="password" />
         <v-text-field label="Confirm Password" v-model="passwordConfirm" />
         <v-btn class="green-button" @click="createUser()">Submit</v-btn>
+        <g-link to="/login" class="caption"
+          >Sign in with another account</g-link
+        >
       </v-form>
     </v-flex>
   </v-layout>
