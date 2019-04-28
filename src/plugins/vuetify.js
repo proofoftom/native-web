@@ -1,19 +1,23 @@
-import Vue from 'vue'
+import Vue from "vue";
 import Vuetify, {
   VApp,
   VBtn,
   VCard,
   VCardText,
   VContainer,
-  VDivider,
+  VContent,
   VFlex,
+  VForm,
+  VHover,
   VIcon,
+  VImg,
   VLayout,
   VResponsive,
   VSpacer,
+  VTextField,
   VToolbar
-} from 'vuetify/lib'
-import 'vuetify/src/stylus/main.styl'
+} from "vuetify/lib";
+import "vuetify/src/stylus/main.styl";
 
 Vue.use(Vuetify, {
   components: {
@@ -22,12 +26,16 @@ Vue.use(Vuetify, {
     VCard,
     VCardText,
     VContainer,
-    VDivider,
+    VContent,
     VFlex,
+    VForm,
+    VHover,
     VIcon,
+    VImg,
     VLayout,
     VResponsive,
     VSpacer,
+    VTextField,
     VToolbar
   }
-})
+});

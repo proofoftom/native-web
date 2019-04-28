@@ -1,17 +1,22 @@
 <template>
   <Layout :title="$page.community.title">
-    <v-container>
-      <img class="hero" :src="$page.community.image" width="100%" />
-      <h2>{{ $page.community.title }}</h2>
-      <div class="communityInfo">
-        <div class="location" v-html="$page.community.location" /> |
-        <div class="memberCount">{{ $page.community.memberCount }} Members</div>
+    <img class="hero" :src="$page.community.image" width="100%" />
+    <h2>{{ $page.community.title }}</h2>
+    <div class="community-info">
+      <div class="location">
+        {{ $page.community.location }}
       </div>
-      <div class="communityPurpose" v-html="$page.community.communityPurpose" />
-      <div class="subtitles">
-        <div class="subtitle" v-html="$page.community.subtitle" />
+      |
+      <div class="member-count">{{ $page.community.memberCount }} Members</div>
+    </div>
+    <div class="community-purpose">
+      {{ $page.community.communityPurpose }}
+    </div>
+    <div class="subtitles">
+      <div class="subtitle">
+        {{ $page.community.subtitle }}
       </div>
-    </v-container>
+    </div>
   </Layout>
 </template>
 
@@ -29,22 +34,23 @@ query community ($path: String!) {
 </page-query>
 
 <script>
-import Layout from '~/layouts/Default.vue'
+import Layout from "~/layouts/Default.vue";
+
 export default {
   components: {
     Layout
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.community.title
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="stylus" scoped>
 .location
-.memberCount
+.member-count
   display inline
 
 .subtitle
