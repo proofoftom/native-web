@@ -1,6 +1,7 @@
 <template>
   <v-layout>
-    <v-flex xs12 sm6>
+    <flex-logo />
+    <v-flex xs12 sm5>
       <v-form>
         <g-link to="/login" class="subheading">
           Sign in with another account
@@ -9,8 +10,7 @@
         <v-text-field label="Email" v-model="email" />
         <v-text-field label="Password" v-model="password" />
         <v-text-field label="Confirm Password" v-model="passwordConfirm" />
-        <v-spacer />
-        <v-btn class="mt-4" @click="createUser()">Submit</v-btn>
+        <v-btn class="green-button" @click="createUser()">Submit</v-btn>
       </v-form>
     </v-flex>
   </v-layout>
@@ -18,6 +18,7 @@
 
 <script>
 import axios from "axios";
+import FlexLogo from "./FlexLogo";
 
 export default {
   data() {
@@ -32,7 +33,7 @@ export default {
     createUser() {
       const self = this;
       axios
-        .post("http://localhost:3000/user/register", {
+        .post(process.env.API_URL + "/user/register", {
           username: this.username,
           password: this.password
         })
@@ -41,6 +42,9 @@ export default {
         })
         .catch(function() {});
     }
+  },
+  components: {
+    FlexLogo
   }
 };
 </script>
