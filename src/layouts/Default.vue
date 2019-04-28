@@ -21,9 +21,9 @@
         </v-btn>
       </v-toolbar>
       <transition name="fade" appear>
-        <main>
+        <v-content>
           <slot />
-        </main>
+        </v-content>
       </transition>
     </v-container>
   </v-app>
@@ -40,10 +40,6 @@ query {
 <style lang="stylus">
 @import '../assets/stylus/_globals';
 
-.application--wrap
-  align-items center
-  margin 20px
-
 .main-nav
   align-items center
   a
@@ -52,11 +48,6 @@ query {
     font-weight bold
     color darkslategray
     margin 0 20px
-
-main
-  max-width 1280px
-  width 100%
-  margin-top 125px
 
 // Animations
 .fade-enter-active
