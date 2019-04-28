@@ -11,8 +11,6 @@
             />
           </g-link>
           <g-link to="/communities" class="flex">Communities</g-link>
-          <a href="https://chat.nativeproject.one" target="_blank">Chat</a>
-          <a href="https://forum.nativeproject.one" target="_blank">Forum</a>
         </v-toolbar-items>
         <v-spacer></v-spacer>
         <v-btn icon large>
