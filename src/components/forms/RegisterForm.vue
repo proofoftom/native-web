@@ -32,7 +32,7 @@ export default {
     createUser() {
       const self = this;
       axios
-        .post('http://localhost:3000/user/register', {
+        .post("http://localhost:3000/user/register", {
           username: this.username,
           password: this.password
         })
