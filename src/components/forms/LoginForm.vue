@@ -27,7 +27,7 @@ export default {
     loginUser() {
       const self = this;
       axios
-        .post('http://localhost:3000/user/login', {
+        .post("http://localhost:3000/user/login", {
           username: this.username,
           password: this.password
         })

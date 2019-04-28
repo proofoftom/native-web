@@ -47,7 +47,6 @@ query {
     font-family "Lucida Console", Monaco, monospace
     text-decoration none
     font-weight bold
-    color darkslategray
     margin 0 20px
 
 // Animations
