@@ -75,5 +75,5 @@ export default {
 
 .bottom-gradient
   background-image linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.666))
-  height 210px
+  margin-top 0 !important
 </style>
