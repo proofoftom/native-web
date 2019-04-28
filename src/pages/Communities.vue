@@ -1,14 +1,14 @@
 <template>
-  <Layout>
+  <layout>
     <h1>Explore Communities</h1>
-    <v-layout row wrap class="communities">
-      <CommunityCard
+    <v-layout row wrap>
+      <community-card
         v-for="community in $page.communities.edges"
         :key="community.node.id"
         :community="community.node"
       />
     </v-layout>
-  </Layout>
+  </layout>
 </template>
 
 <page-query>

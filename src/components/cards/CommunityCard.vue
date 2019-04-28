@@ -1,13 +1,9 @@
 <template>
   <v-flex xs12 sm6 md4>
     <v-hover>
-      <v-card
-        class="community-card"
-        slot-scope="{ hover }"
-        :class="`elevation-${hover ? 12 : 2}`"
-      >
+      <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`">
         <!-- <v-responsive width="100%" height="200px"> -->
-        <v-img :src="community.image" height="200px" >
+        <v-img :src="community.image" height="200px">
           <v-layout
             align-end
             fill-height
@@ -18,27 +14,29 @@
             <v-flex>
               <div class="title font-weight-light">{{ community.title }}</div>
               <div class="community-memeber-info">
-                <span class="location">{{ community.location }}</span>
+                <span>{{ community.location }}</span>
                 |
-                <span class="member-count">
-                  {{ community.memberCount }} Members
-                </span>
+                <span> {{ community.memberCount }} Members </span>
               </div>
             </v-flex>
           </v-layout>
         </v-img>
         <!-- </v-responsive> -->
         <v-card-text>
-          <div class="community-purpose">{{ community.communityPurpose }}</div>
+          <div>{{ community.communityPurpose }}</div>
         </v-card-text>
-        <v-container class="subtitles pt-0 px-3">
+        <v-container class="pt-0 px-3">
           <div class="subtitle">{{ community.subtitle }}</div>
         </v-container>
         <v-container class="actions pt-0 px-2">
           <v-layout>
             <!-- Todo: Check for auth and swap out link for Join Community link -->
-            <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
-            <v-btn @click="routerPush(community.path)">Go</v-btn>
+            <v-btn class="green-button" @click="routerPush('login')"
+              >Join</v-btn
+            >
+            <v-btn class="green-button" @click="routerPush(community.path)"
+              >View</v-btn
+            >
           </v-layout>
         </v-container>
       </v-card>

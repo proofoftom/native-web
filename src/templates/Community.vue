@@ -1,5 +1,5 @@
 <template>
-  <Layout :title="$page.community.title">
+  <layout :title="$page.community.title">
     <img class="hero" :src="$page.community.image" width="100%" />
     <h2>{{ $page.community.title }}</h2>
     <div class="community-info">
@@ -17,7 +17,7 @@
         {{ $page.community.subtitle }}
       </div>
     </div>
-  </Layout>
+  </layout>
 </template>
 
 <page-query>
@@ -34,12 +34,7 @@ query community ($path: String!) {
 </page-query>
 
 <script>
-import Layout from "~/layouts/Default.vue";
-
 export default {
-  components: {
-    Layout
-  },
   metaInfo() {
     return {
       title: this.$page.community.title
