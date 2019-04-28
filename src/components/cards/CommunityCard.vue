@@ -1,33 +1,42 @@
 <template>
   <v-flex xs12 sm6 md4>
-    <v-card class="community-card">
-      <v-responsive width="100%" height="200px">
-        <img :src="community.image" width="100%" />
-      </v-responsive>
-      <v-card-text>
-        <div class="title">{{ community.title }}</div>
-        <div class="community-memeber-info">
-          <div class="location pt-1">{{ community.location }}</div>
-          <v-divider />
-          <div class="member-count pt-2">
-            {{ community.memberCount }} Members
-          </div>
-        </div>
-      </v-card-text>
-      <v-card-text class="pt-0">
-        <div class="community-purpose">{{ community.communityPurpose }}</div>
-      </v-card-text>
-      <v-container class="subtitles pt-0 px-3">
-        <div class="subtitle">{{ community.subtitle }}</div>
-      </v-container>
-      <v-container class="actions pt-0 px-2">
-        <v-layout>
-          <!-- Todo: Check for auth and swap out link for Join Community link -->
-          <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
-          <v-btn @click="routerPush(community.path)">Go</v-btn>
-        </v-layout>
-      </v-container>
-    </v-card>
+    <v-hover>
+      <v-card
+        class="community-card"
+        slot-scope="{ hover }"
+        :class="`elevation-${hover ? 12 : 2}`"
+      >
+        <!-- <v-responsive width="100%" height="200px"> -->
+        <v-img :src="community.image" height="200px">
+          <v-layout align-end fill-height white--text pa-2>
+            <v-flex>
+              <div class="title font-weight-light">{{ community.title }}</div>
+              <div class="community-memeber-info">
+                <span class="location">{{ community.location }}</span>
+                |
+                <span class="member-count">
+                  {{ community.memberCount }} Members
+                </span>
+              </div>
+            </v-flex>
+          </v-layout>
+        </v-img>
+        <!-- </v-responsive> -->
+        <v-card-text>
+          <div class="community-purpose">{{ community.communityPurpose }}</div>
+        </v-card-text>
+        <v-container class="subtitles pt-0 px-3">
+          <div class="subtitle">{{ community.subtitle }}</div>
+        </v-container>
+        <v-container class="actions pt-0 px-2">
+          <v-layout>
+            <!-- Todo: Check for auth and swap out link for Join Community link -->
+            <v-btn @click="routerPush('login')">Join | $10.00</v-btn>
+            <v-btn @click="routerPush(community.path)">Go</v-btn>
+          </v-layout>
+        </v-container>
+      </v-card>
+    </v-hover>
   </v-flex>
 </template>
 
@@ -56,4 +65,7 @@ export default {
 
 .actions .layout
   justify-content center
+
+.community-memeber-info > *
+  display inline
 </style>

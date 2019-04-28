@@ -6,7 +6,7 @@
       <div class="location">
         {{ $page.community.location }}
       </div>
-      <v-divider />
+      |
       <div class="member-count">{{ $page.community.memberCount }} Members</div>
     </div>
     <div class="community-purpose">
