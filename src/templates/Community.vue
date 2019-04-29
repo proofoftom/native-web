@@ -1,22 +1,40 @@
 <template>
   <layout :title="$page.community.title">
-    <img class="hero" :src="$page.community.image" width="100%" />
-    <h2>{{ $page.community.title }}</h2>
-    <div class="community-info">
-      <div class="location">
-        {{ $page.community.location }}
-      </div>
-      |
-      <div class="member-count">{{ $page.community.memberCount }} Members</div>
-    </div>
-    <div class="community-purpose">
-      {{ $page.community.communityPurpose }}
-    </div>
-    <div class="subtitles">
-      <div class="subtitle">
-        {{ $page.community.subtitle }}
-      </div>
-    </div>
+    <v-img
+      :src="$page.community.image"
+      width="100%"
+      :height="imageHeight"
+      class="elevation-8"
+    >
+      <v-layout align-end fill-height white--text pa-2 class="bottom-gradient">
+        <v-flex>
+          <div class="title font-weight-light">{{ $page.community.title }}</div>
+          <div class="community-memeber-info">
+            <span>{{ $page.community.location }}</span>
+            |
+            <span> {{ $page.community.memberCount }} Members </span>
+          </div>
+        </v-flex>
+      </v-layout>
+    </v-img>
+    <v-tabs v-model="active" slider-color="#2f4f4f" class="elevation-8" grow>
+      <v-tab>About</v-tab>
+      <v-tab>Tasks</v-tab>
+      <v-tab>Votes</v-tab>
+      <v-tab>Projects</v-tab>
+      <v-tab-item>
+        <About />
+      </v-tab-item>
+      <v-tab-item>
+        <Tasks />
+      </v-tab-item>
+      <v-tab-item>
+        <Votes />
+      </v-tab-item>
+      <v-tab-item>
+        <Projects />
+      </v-tab-item>
+    </v-tabs>
   </layout>
 </template>
 
@@ -34,23 +52,42 @@ query community ($path: String!) {
 </page-query>
 
 <script>
+import {
+  About,
+  Projects,
+  Tasks,
+  Votes
+} from "~/components/cards/CommunityDetails";
+
 export default {
   metaInfo() {
     return {
       title: this.$page.community.title
     };
+  },
+  computed: {
+    imageHeight() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return "220px";
+        case "sm":
+          return "350px";
+        default:
+          return "500px";
+      }
+    }
+  },
+  components: {
+    About,
+    Projects,
+    Tasks,
+    Votes
   }
 };
 </script>
 
 <style lang="stylus" scoped>
-.location
-.member-count
-  display inline
-
-.subtitle
-  padding 5px
-  border 1px solid darkslategray
-  border-radius 5px
-  display inline
+.bottom-gradient
+  background-image linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.666))
+  margin-top 0 !important
 </style>

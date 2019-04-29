@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import RegisterForm from "~/components/forms/RegisterForm";
+import RegisterForm from "~/components/forms/LoginForms/RegisterForm";
 
 export default {
   metaInfo: {

@@ -12,8 +12,10 @@ import Vuetify, {
   VIcon,
   VImg,
   VLayout,
-  VResponsive,
   VSpacer,
+  VTabs,
+  VTab,
+  VTabItem,
   VTextField,
   VToolbar,
   VToolbarItems
@@ -34,8 +36,10 @@ Vue.use(Vuetify, {
     VIcon,
     VImg,
     VLayout,
-    VResponsive,
     VSpacer,
+    VTabs,
+    VTab,
+    VTabItem,
     VTextField,
     VToolbar,
     VToolbarItems
