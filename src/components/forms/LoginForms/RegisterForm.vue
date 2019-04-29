@@ -36,7 +36,7 @@ export default {
         .post("https://api.nativeproject.one/user/register", this.$data)
         .then(function(response) {
           localStorage.token = response.data.token;
-          self.$router.push("/communities");
+          self.$router.push("/profile");
         })
         .catch(function(error) {
           localStorage.error = error.message;

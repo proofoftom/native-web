@@ -12,13 +12,18 @@ import Vuetify, {
   VIcon,
   VImg,
   VLayout,
+  VList,
+  VListTile,
+  VListTileTitle,
+  VMenu,
   VSpacer,
   VTabs,
   VTab,
   VTabItem,
   VTextField,
   VToolbar,
-  VToolbarItems
+  VToolbarItems,
+  VToolbarSideIcon
 } from "vuetify/lib";
 import "vuetify/src/stylus/main.styl";
 
@@ -36,12 +41,17 @@ Vue.use(Vuetify, {
     VIcon,
     VImg,
     VLayout,
+    VList,
+    VListTile,
+    VListTileTitle,
+    VMenu,
     VSpacer,
     VTabs,
     VTab,
     VTabItem,
     VTextField,
     VToolbar,
-    VToolbarItems
+    VToolbarItems,
+    VToolbarSideIcon
   }
 });

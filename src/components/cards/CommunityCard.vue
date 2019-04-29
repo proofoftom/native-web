@@ -29,7 +29,7 @@
         <v-container class="actions pt-0 px-2">
           <v-layout>
             <!-- Todo: Check for auth and swap out link for Join Community link -->
-            <v-btn class="green-button" @click="routerPush('login')"
+            <v-btn class="green-button" @click="routerPush('join-community')"
               >Join</v-btn
             >
             <v-btn class="green-button" @click="routerPush(community.path)"
