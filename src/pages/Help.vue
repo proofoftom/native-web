@@ -16,28 +16,28 @@
         <v-flex>
           <h2>Beginner</h2>
           <v-layout column>
-            <g-link>Lorem ipsum dolor sit.</g-link>
-            <g-link>Lorem ipsum dolor sit amet consectetur.</g-link>
-            <g-link>Lorem ipsum dolor sit amet.</g-link>
-            <g-link>Lorem, ipsum dolor.</g-link>
+            <v-btn flat><g-link>Lorem ipsum dolor sit.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet consectetur.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem, ipsum dolor.</g-link></v-btn>
           </v-layout>
         </v-flex>
         <v-flex>
           <h2>Intermediate</h2>
           <v-layout column>
-            <g-link>Lorem, ipsum dolor.</g-link>
-            <g-link>Lorem ipsum dolor sit.</g-link>
-            <g-link>Lorem ipsum dolor sit amet consectetur.</g-link>
-            <g-link>Lorem ipsum dolor sit amet.</g-link>
+            <v-btn flat><g-link>Lorem, ipsum dolor.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet consectetur.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet.</g-link></v-btn>
           </v-layout>
         </v-flex>
         <v-flex>
           <h2>Advanced</h2>
           <v-layout column>
-            <g-link>Lorem ipsum dolor sit amet.</g-link>
-            <g-link>Lorem, ipsum dolor.</g-link>
-            <g-link>Lorem ipsum dolor sit.</g-link>
-            <g-link>Lorem ipsum dolor sit amet consectetur.</g-link>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem, ipsum dolor.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit.</g-link></v-btn>
+            <v-btn flat><g-link>Lorem ipsum dolor sit amet consectetur.</g-link></v-btn>
           </v-layout>
         </v-flex>
       </v-layout>
