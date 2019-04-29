@@ -2,21 +2,7 @@
   <v-app class="app">
     <v-container grid-list-lg>
       <v-toolbar height="100" app>
-        <v-toolbar-items class="main-nav subheading">
-          <g-link to="/">
-            <img
-              alt="Native Logo"
-              src="../assets/images/ntv__logo--horizontal.png"
-              width="175px"
-            />
-          </g-link>
-          <g-link to="/communities" class="flex">
-            <v-btn flat>Communities</v-btn>
-          </g-link>
-          <g-link to="/help" class="flex">
-            <v-btn flat>Help</v-btn>
-          </g-link>
-        </v-toolbar-items>
+        <main-nav />
         <v-spacer></v-spacer>
         <user-menu />
       </v-toolbar>
@@ -38,10 +24,12 @@ query {
 </static-query>
 
 <script>
+import MainNav from "~/components/menus/MainNav";
 import UserMenu from "~/components/menus/UserMenu";
 
 export default {
   components: {
+    MainNav,
     UserMenu
   }
 };
@@ -49,13 +37,6 @@ export default {
 
 <style lang="stylus">
 @import '../assets/stylus/_globals';
-
-.main-nav
-  align-items center
-  a
-    font-family "Lucida Console", Monaco, monospace
-    font-weight bold
-    margin 0 20px
 
 // Animations
 .fade-enter-active

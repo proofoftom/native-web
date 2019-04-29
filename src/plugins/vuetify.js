@@ -14,6 +14,7 @@ import Vuetify, {
   VLayout,
   VList,
   VListTile,
+  VListTileContent,
   VListTileTitle,
   VMenu,
   VSpacer,
@@ -22,7 +23,8 @@ import Vuetify, {
   VTabItem,
   VTextField,
   VToolbar,
-  VToolbarItems
+  VToolbarItems,
+  VToolbarSideIcon
 } from "vuetify/lib";
 import "vuetify/src/stylus/main.styl";
 
@@ -42,6 +44,7 @@ Vue.use(Vuetify, {
     VLayout,
     VList,
     VListTile,
+    VListTileContent,
     VListTileTitle,
     VMenu,
     VSpacer,
@@ -50,6 +53,7 @@ Vue.use(Vuetify, {
     VTabItem,
     VTextField,
     VToolbar,
-    VToolbarItems
+    VToolbarItems,
+    VToolbarSideIcon
   }
 });
