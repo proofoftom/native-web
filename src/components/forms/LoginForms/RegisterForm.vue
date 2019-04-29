@@ -33,7 +33,7 @@ export default {
     createUser() {
       const self = this;
       axios
-        .post("https://api.nativeproject.one/user/register", this.$data)
+        .post("http://api.nativeproject.one/user/register", this.$data)
         .then(function(response) {
           localStorage.token = response.data.token;
           self.$router.push("/communities");
