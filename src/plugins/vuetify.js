@@ -16,7 +16,6 @@ import Vuetify, {
   VTabs,
   VTab,
   VTabItem,
-  VTabTransition,
   VTextField,
   VToolbar,
   VToolbarItems
@@ -41,7 +40,6 @@ Vue.use(Vuetify, {
     VTabs,
     VTab,
     VTabItem,
-    VTabTransition,
     VTextField,
     VToolbar,
     VToolbarItems

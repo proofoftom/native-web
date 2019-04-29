@@ -4,7 +4,7 @@
       :src="$page.community.image"
       width="100%"
       :height="imageHeight"
-      class="elevation-12"
+      class="elevation-8"
     >
       <v-layout align-end fill-height white--text pa-2 class="bottom-gradient">
         <v-flex>
@@ -17,19 +17,28 @@
         </v-flex>
       </v-layout>
     </v-img>
-    <v-tabs>
-      <v-tab>
+    <v-tabs
+      v-model="active"
+      slider-color="#2f4f4f"
+      class="elevation-8"
+      grow
+    >
+      <v-tab>About</v-tab>
+      <v-tab>Tasks</v-tab>
+      <v-tab>Votes</v-tab>
+      <v-tab>Projects</v-tab>
+      <v-tab-item>
         <About />
-      </v-tab>
-      <v-tab>
+      </v-tab-item>
+      <v-tab-item>
         <Tasks />
-      </v-tab>
-      <v-tab>
+      </v-tab-item>
+      <v-tab-item>
         <Votes />
-      </v-tab>
-      <v-tab>
+      </v-tab-item>
+      <v-tab-item>
         <Projects />
-      </v-tab>
+      </v-tab-item>
     </v-tabs>
   </layout>
 </template>
