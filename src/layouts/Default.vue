@@ -18,11 +18,7 @@
           </g-link>
         </v-toolbar-items>
         <v-spacer></v-spacer>
-        <v-btn icon large>
-          <g-link to="/login">
-            <v-icon large>account_circle</v-icon>
-          </g-link>
-        </v-btn>
+        <user-menu />
       </v-toolbar>
       <transition name="fade" appear>
         <v-content>
@@ -40,6 +36,16 @@ query {
   }
 }
 </static-query>
+
+<script>
+import UserMenu from "~/components/menus/UserMenu";
+
+export default {
+  components: {
+    UserMenu
+  }
+};
+</script>
 
 <style lang="stylus">
 @import '../assets/stylus/_globals';
