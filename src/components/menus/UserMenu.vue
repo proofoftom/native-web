@@ -39,8 +39,11 @@
 export default {
   data() {
     return {
-      token: localStorage.getItem("token")
+      token: ""
     };
+  },
+  mounted() {
+    this.token = localStorage.getItem("token");
   },
   methods: {
     routerPush(path) {
