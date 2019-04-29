@@ -7,7 +7,7 @@
     </template>
     <v-list>
       <v-list-tile v-if="token">
-        <g-link to="/">
+        <g-link to="/profile">
           <v-btn small flat>
             <v-list-tile-title>
               My Account
