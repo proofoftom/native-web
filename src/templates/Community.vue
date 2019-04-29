@@ -17,7 +17,7 @@
         </v-flex>
       </v-layout>
     </v-img>
-    <v-tabs v-model="active" slider-color="#2f4f4f" class="elevation-8" grow>
+    <v-tabs slider-color="#2f4f4f" class="elevation-8" grow>
       <v-tab>About</v-tab>
       <v-tab>Tasks</v-tab>
       <v-tab>Votes</v-tab>

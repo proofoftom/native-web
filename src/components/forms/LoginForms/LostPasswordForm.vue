@@ -7,7 +7,9 @@
         <v-btn class="green-button" @click="sendResetLink()"
           >Send Reset Link</v-btn
         >
-        <g-link to="/login" class="caption">Back</g-link>
+        <g-link to="/login" class="caption">
+          <v-btn flat class="caption">Back</v-btn>
+        </g-link>
       </v-form>
     </v-flex>
   </v-layout>
