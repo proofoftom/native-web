@@ -10,8 +10,12 @@
               width="175px"
             />
           </g-link>
-          <g-link to="/communities" class="flex">Communities</g-link>
-          <g-link to="/help" class="flex">Help</g-link>
+          <g-link to="/communities" class="flex">
+            <v-btn flat>Communities</v-btn>
+          </g-link>
+          <g-link to="/help" class="flex">
+            <v-btn flat>Help</v-btn>
+          </g-link>
         </v-toolbar-items>
         <v-spacer></v-spacer>
         <v-btn icon large>
