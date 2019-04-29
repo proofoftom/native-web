@@ -17,14 +17,18 @@
       <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
       <v-list>
         <v-list-tile>
-          <v-list-tile-content>
-            <v-list-tile-title>Communities</v-list-tile-title>
-          </v-list-tile-content>
+          <g-link to="/communities">
+            <v-btn small flat>
+              <v-list-tile-title>Communities</v-list-tile-title>
+            </v-btn>
+          </g-link>
         </v-list-tile>
         <v-list-tile>
-          <v-list-tile-content>
-            <v-list-tile-title>Help</v-list-tile-title>
-          </v-list-tile-content>
+          <g-link to="/help">
+            <v-btn small flat>
+              <v-list-tile-title>Help</v-list-tile-title>
+            </v-btn>
+          </g-link>
         </v-list-tile>
       </v-list>
     </v-menu>
