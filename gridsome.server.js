@@ -14,9 +14,7 @@ module.exports = function(api) {
   });
 
   api.loadSource(async store => {
-    const { data } = await axios.get(
-      "https://api.nativeproject.one/communities"
-    );
+    const { data } = await axios.get(process.env.API_URL + "/communities");
 
     const contentType = store.addContentType({
       typeName: "Community",

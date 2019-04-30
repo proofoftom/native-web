@@ -25,7 +25,7 @@ export default {
   mounted() {
     const self = this;
     axios
-      .get("https://api.nativeproject.one/user", {
+      .get(process.env.API_URL + "/user", {
         headers: {
           Authorization: "Bearer " + localStorage.token
         }
