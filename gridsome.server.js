@@ -1,3 +1,4 @@
+require("dotenv-flow").config();
 const axios = require("axios");
 const nodeExternals = require("webpack-node-externals");
 
