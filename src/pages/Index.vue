@@ -29,7 +29,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Tokenized Digital Communities"
+    title: 'Tokenized Digital Communities'
   }
-};
+}
 </script>

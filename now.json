@@ -8,8 +8,5 @@
       "use": "@now/static-build",
       "config": { "distDir": "dist" }
     }
-  ],
-  "env": {
-    "API_URL": "https://api.nativeproject.one"
-  }
+  ]
 }

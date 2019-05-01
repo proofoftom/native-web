@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "CommunityCard",
+  name: 'CommunityCard',
   props: {
     community: {
       type: Object,
@@ -53,10 +53,10 @@ export default {
   },
   methods: {
     routerPush(path) {
-      this.$router.push(path);
+      this.$router.push(path)
     }
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>

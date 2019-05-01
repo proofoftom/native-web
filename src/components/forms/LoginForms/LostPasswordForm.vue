@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import FlexLogo from "./FlexLogo";
+import FlexLogo from './FlexLogo'
 
 export default {
   data() {
     return {
-      email: ""
-    };
+      email: ''
+    }
   },
   methods: {
     sendResetLink() {
@@ -32,5 +32,5 @@ export default {
   components: {
     FlexLogo
   }
-};
+}
 </script>

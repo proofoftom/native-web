@@ -39,20 +39,20 @@
 export default {
   data() {
     return {
-      token: ""
-    };
+      token: ''
+    }
   },
   mounted() {
-    this.token = localStorage.getItem("token");
+    this.token = localStorage.getItem('token')
   },
   methods: {
     routerPush(path) {
-      this.$router.push(path);
+      this.$router.push(path)
     },
     logout() {
-      localStorage.removeItem("token");
-      this.routerPush("/");
+      localStorage.removeItem('token')
+      this.routerPush('/')
     }
   }
-};
+}
 </script>

@@ -1,5 +1,6 @@
-const axios = require("axios");
-const nodeExternals = require("webpack-node-externals");
+require('dotenv-flow').config()
+const axios = require('axios')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = function(api) {
   // Whitelist Vuetify in webpack in order to build
@@ -9,19 +10,17 @@ module.exports = function(api) {
         nodeExternals({
           whitelist: [/^vuetify/]
         })
-      ]);
+      ])
     }
-  });
+  })
 
   api.loadSource(async store => {
-    const { data } = await axios.get(
-      "https://api.nativeproject.one/communities"
-    );
+    const { data } = await axios.get(process.env.API_URL + '/communities')
 
     const contentType = store.addContentType({
-      typeName: "Community",
-      route: "/communities/:slug"
-    });
+      typeName: 'Community',
+      route: '/communities/:slug'
+    })
 
     for (const community of data) {
       contentType.addNode({
@@ -31,7 +30,7 @@ module.exports = function(api) {
         fields: {
           ...community
         }
-      });
+      })
     }
-  });
-};
+  })
+}
