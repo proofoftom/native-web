@@ -3,7 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-require("dotenv-flow").config();
+require("dotenv-flow").config()
 
 module.exports = {
   siteName: "Native",
@@ -18,3 +18,4 @@ module.exports = {
   },
   plugins: []
 };
+}

@@ -30,5 +30,5 @@ export default {
   metaInfo: {
     title: "Tokenized Digital Communities"
   }
-};
+}
 </script>

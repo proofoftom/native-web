@@ -30,7 +30,7 @@ query Communities {
 </page-query>
 
 <script>
-import CommunityCard from "~/components/cards/CommunityCard";
+import CommunityCard from "~/components/cards/CommunityCard"
 
 export default {
   metaInfo: {
@@ -39,5 +39,5 @@ export default {
   components: {
     CommunityCard
   }
-};
+}
 </script>

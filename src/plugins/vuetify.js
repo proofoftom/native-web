@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from "vue"
 import Vuetify, {
   VApp,
   VBtn,
@@ -24,8 +24,8 @@ import Vuetify, {
   VToolbar,
   VToolbarItems,
   VToolbarSideIcon
-} from "vuetify/lib";
-import "vuetify/src/stylus/main.styl";
+} from "vuetify/lib"
+import "vuetify/src/stylus/main.styl"
 
 Vue.use(Vuetify, {
   components: {
@@ -54,4 +54,4 @@ Vue.use(Vuetify, {
     VToolbarItems,
     VToolbarSideIcon
   }
-});
+})

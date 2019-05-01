@@ -57,23 +57,23 @@ import {
   Projects,
   Tasks,
   Votes
-} from "~/components/cards/CommunityDetails";
+} from "~/components/cards/CommunityDetails"
 
 export default {
   metaInfo() {
     return {
       title: this.$page.community.title
-    };
+    }
   },
   computed: {
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case "xs":
-          return "220px";
+          return "220px"
         case "sm":
-          return "350px";
+          return "350px"
         default:
-          return "500px";
+          return "500px"
       }
     }
   },
@@ -83,7 +83,7 @@ export default {
     Tasks,
     Votes
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>

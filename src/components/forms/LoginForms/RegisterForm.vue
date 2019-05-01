@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import axios from "axios";
-import FlexLogo from "./FlexLogo";
+import axios from "axios"
+import FlexLogo from "./FlexLogo"
 
 export default {
   data() {
@@ -27,24 +27,24 @@ export default {
       email: "",
       password: "",
       passwordConfirm: ""
-    };
+    }
   },
   methods: {
     createUser() {
-      const self = this;
+      const self = this
       axios
         .post(process.env.API_URL + "/user/register", this.$data)
         .then(function(response) {
-          localStorage.token = response.data.token;
-          self.$router.push("/profile");
+          localStorage.token = response.data.token
+          self.$router.push("/profile")
         })
         .catch(function(error) {
-          localStorage.error = error.message;
-        });
+          localStorage.error = error.message
+        })
     }
   },
   components: {
     FlexLogo
   }
-};
+}
 </script>

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from "axios"
 
 export default {
   data() {
@@ -20,10 +20,10 @@ export default {
         id: 0,
         createdAt: ""
       }
-    };
+    }
   },
   mounted() {
-    const self = this;
+    const self = this
     axios
       .get(process.env.API_URL + "/user", {
         headers: {
@@ -31,12 +31,12 @@ export default {
         }
       })
       .then(function(response) {
-        self.user = response.data.user;
+        self.user = response.data.user
       })
       .catch(function(error) {
         // Todo: Redirect to login and notify of error
-        localStorage.error = error;
-      });
+        localStorage.error = error
+      })
   }
-};
+}
 </script>

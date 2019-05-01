@@ -24,19 +24,19 @@ query {
 </static-query>
 
 <script>
-import MainNav from "~/components/menus/MainNav";
-import UserMenu from "~/components/menus/UserMenu";
+import MainNav from "~/components/menus/MainNav"
+import UserMenu from "~/components/menus/UserMenu"
 
 export default {
   components: {
     MainNav,
     UserMenu
   }
-};
+}
 </script>
 
 <style lang="stylus">
-@import '../assets/stylus/_globals';
+@import '../assets/stylus/_globals'
 
 // Animations
 .fade-enter-active

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import LostPasswordForm from "~/components/forms/LoginForms/LostPasswordForm";
+import LostPasswordForm from "~/components/forms/LoginForms/LostPasswordForm"
 
 export default {
   metaInfo: {
@@ -15,5 +15,5 @@ export default {
   components: {
     LostPasswordForm
   }
-};
+}
 </script>
