@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import RegisterForm from "~/components/forms/LoginForms/RegisterForm"
+import RegisterForm from '~/components/forms/LoginForms/RegisterForm'
 
 export default {
   metaInfo: {
-    title: "Register"
+    title: 'Register'
   },
   components: {
     RegisterForm

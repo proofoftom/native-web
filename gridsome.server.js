@@ -1,6 +1,6 @@
-require("dotenv-flow").config()
-const axios = require("axios")
-const nodeExternals = require("webpack-node-externals")
+require('dotenv-flow').config()
+const axios = require('axios')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = function(api) {
   // Whitelist Vuetify in webpack in order to build
@@ -15,11 +15,11 @@ module.exports = function(api) {
   })
 
   api.loadSource(async store => {
-    const { data } = await axios.get(process.env.API_URL + "/communities")
+    const { data } = await axios.get(process.env.API_URL + '/communities')
 
     const contentType = store.addContentType({
-      typeName: "Community",
-      route: "/communities/:slug"
+      typeName: 'Community',
+      route: '/communities/:slug'
     })
 
     for (const community of data) {

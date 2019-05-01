@@ -35,11 +35,11 @@
   </v-toolbar-items>
 </template>
 
-<style lang="stylus" scoped>
+<style lang='stylus' scoped>
 .main-nav
   align-items center
   a
-    font-family "Lucida Console", Monaco, monospace
+    font-family 'Lucida Console', Monaco, monospace
     font-weight bold
     margin 0 20px
 </style>

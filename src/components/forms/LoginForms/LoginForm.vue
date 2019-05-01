@@ -25,18 +25,18 @@ import FlexLogo from "./FlexLogo"
 export default {
   data() {
     return {
-      username: "",
-      password: ""
+      username: '',
+      password: ''
     }
   },
   methods: {
     loginUser() {
       const self = this
       axios
-        .post(process.env.API_URL + "/user/login", this.$data)
+        .post(process.env.API_URL + '/user/login', this.$data)
         .then(function(response) {
           localStorage.token = response.data.token
-          self.$router.push("/profile")
+          self.$router.push('/profile')
         })
         .catch(function(error) {
           localStorage.error = error.message

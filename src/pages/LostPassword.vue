@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import LostPasswordForm from "~/components/forms/LoginForms/LostPasswordForm"
+import LostPasswordForm from '~/components/forms/LoginForms/LostPasswordForm'
 
 export default {
   metaInfo: {
-    title: "Lost Password"
+    title: 'Lost Password'
   },
   components: {
     LostPasswordForm

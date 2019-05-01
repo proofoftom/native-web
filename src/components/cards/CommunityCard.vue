@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "CommunityCard",
+  name: 'CommunityCard',
   props: {
     community: {
       type: Object,

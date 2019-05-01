@@ -24,8 +24,8 @@ query {
 </static-query>
 
 <script>
-import MainNav from "~/components/menus/MainNav"
-import UserMenu from "~/components/menus/UserMenu"
+import MainNav from '~/components/menus/MainNav'
+import UserMenu from '~/components/menus/UserMenu'
 
 export default {
   components: {

@@ -10,24 +10,24 @@
 </template>
 
 <script>
-import axios from "axios"
+import axios from 'axios'
 
 export default {
   data() {
     return {
       user: {
-        username: "",
+        username: '',
         id: 0,
-        createdAt: ""
+        createdAt: ''
       }
     }
   },
   mounted() {
     const self = this
     axios
-      .get(process.env.API_URL + "/user", {
+      .get(process.env.API_URL + '/user', {
         headers: {
-          Authorization: "Bearer " + localStorage.token
+          Authorization: 'Bearer ' + localStorage.token
         }
       })
       .then(function(response) {
