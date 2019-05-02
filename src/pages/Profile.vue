@@ -25,7 +25,7 @@ export default {
   mounted() {
     const self = this
     axios
-      .get(process.env.API_URL + '/user', {
+      .get(process.env.GRIDSOME_API_URL + '/user', {
         headers: {
           Authorization: 'Bearer ' + localStorage.token
         }

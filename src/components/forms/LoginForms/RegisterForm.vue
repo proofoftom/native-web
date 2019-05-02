@@ -33,7 +33,7 @@ export default {
     createUser() {
       const self = this
       axios
-        .post(process.env.API_URL + '/user/register', this.$data)
+        .post(process.env.GRIDSOME_API_URL + '/user/register', this.$data)
         .then(function(response) {
           localStorage.token = response.data.token
           self.$router.push('/profile')
