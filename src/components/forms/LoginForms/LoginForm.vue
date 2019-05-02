@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import axios from "axios"
-import FlexLogo from "./FlexLogo"
+import axios from 'axios'
+import FlexLogo from './FlexLogo'
 
 export default {
   data() {
