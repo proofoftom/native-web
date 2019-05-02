@@ -36,8 +36,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../assets/stylus/_globals'
-
 // Animations
 .fade-enter-active
   transition opacity .5s
