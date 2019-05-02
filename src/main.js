@@ -2,6 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import 'babel-polyfill'
 import '~/plugins/vuetify'
+import '~/assets/stylus/_globals.styl'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function(Vue, { head, isClient, router }) {

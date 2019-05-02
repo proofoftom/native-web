@@ -3,7 +3,7 @@
     <g-link to="/">
       <img
         alt="Native Logo"
-        src="../../assets/images/ntv__logo--horizontal.png"
+        :src="require('~/assets/images/ntv__logo--horizontal.png')"
         width="175px"
       />
     </g-link>
