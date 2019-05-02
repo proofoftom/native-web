@@ -24,5 +24,10 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "browserslist": [
+    "> %1",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
