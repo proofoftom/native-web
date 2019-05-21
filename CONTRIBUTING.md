@@ -40,7 +40,7 @@ If the answer to either of those two questions are "yes", then you're probably d
 ## Fixing issues
 
 1. [Find an issue](https://gitlab.com/groups/native-project/-/issues) that you are interested in.
-    - You may want to ask on the issue or on Native's Slack #dev channel if anyone has already started working on the issue.
+    - You may want to ask on the issue or on Native Chat's [#devs channel](https://chat.nativeproject.one/channel/devs) if anyone has already started working on the issue.
 1. Fork and clone a local copy of the repository.
 1. Make the appropriate changes for the issue you are trying to address or the feature that you want to add.
 1. Push the changes to the remote repository.
@@ -56,4 +56,4 @@ You can also edit a page directly through your browser by clicking the "Web IDE"
 
 ## Community
 
-If you need help, please reach out to Native core contributors and community members in the Native Slack #dev channel. We'd love to hear from you and know what you're working on!
+If you need help, please reach out to Native core contributors and community members in the Native Chat's [#devs channel](https://chat.nativeproject.one/channel/devs). We'd love to hear from you and know what you're working on!
