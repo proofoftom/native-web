@@ -1,4 +1,4 @@
-# Native Frontend
+# Native Beta Frontend
 
 > \* This requires that the [Native Server](https://gitlab.com/native-project/server) be running. Follow the instructions to do so [here](https://gitlab.com/native-project/server/blob/master/README.md)
 
