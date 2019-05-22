@@ -70,10 +70,8 @@ export default {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
           return '220px'
-        case 'sm':
-          return '350px'
         default:
-          return '500px'
+          return '250px'
       }
     }
   },
