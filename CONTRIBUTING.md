@@ -10,7 +10,7 @@ There are many ways to contribute, from writing tutorials or blog posts, improvi
 
 Unsure where to begin contributing to Native?
 
-You can start with a [Good First Issue](https://gitlab.com/groups/native-project/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name%5B%5D=good%20first%20issue).
+You can start with a [Good First Issue](https://github.com/orgs/native-project/projects/1?card_filter_query=label%3Agood+first+issue).
 
 > Good first issues are usually for small features, additional tests, spelling / grammar fixes, formatting changes, or other clean up.
 
