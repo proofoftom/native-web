@@ -9,5 +9,12 @@ module.exports = {
   siteDescription: 'Incentivize and Scale Digital Communities.',
   siteUrl: 'https://beta.nativeproject.one',
   titleTemplate: 'Native - %s',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-drupal',
+      options: {
+        baseUrl: process.env.GRIDSOME_API_URL
+      }
+    }
+  ]
 }
