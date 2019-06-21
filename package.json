@@ -8,6 +8,7 @@
     "now-build": "yarn build"
   },
   "dependencies": {
+    "@gridsome/source-airtable": "^0.1.0",
     "@gridsome/source-drupal": "^0.2.1",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
