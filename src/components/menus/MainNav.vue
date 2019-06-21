@@ -10,9 +10,12 @@
     <g-link to="/communities" class="flex hidden-xs-only">
       <v-btn flat>Communities</v-btn>
     </g-link>
-    <g-link to="/help" class="flex hidden-xs-only">
-      <v-btn flat>Help</v-btn>
+    <g-link to="/roadmap" class="flex hidden-xs-only">
+      <v-btn flat>Roadmap</v-btn>
     </g-link>
+    <!-- <g-link to="/help" class="flex hidden-xs-only">
+      <v-btn flat>Help</v-btn>
+    </g-link> -->
     <v-menu class="hidden-sm-and-up">
       <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
       <v-list>
