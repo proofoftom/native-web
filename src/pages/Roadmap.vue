@@ -32,6 +32,9 @@ query features {
 import StatusGroup from "~/components/roadmap/StatusGroup";
 
 export default {
+  metaInfo: {
+    title: 'Roadmap'
+  },
   data() {
     return {
       statuses: {
