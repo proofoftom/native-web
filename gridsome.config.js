@@ -15,6 +15,15 @@ module.exports = {
       options: {
         baseUrl: process.env.GRIDSOME_API_URL
       }
+    },
+    {
+      use: '@gridsome/source-airtable',
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY, // required
+        baseId: process.env.AIRTABLE_BASE_ID, // required
+        tableName: process.env.AIRTABLE_TABLE_NAME, // required
+        typeName: process.env.AIRTABLE_TYPE_NAME, // required
+      }
     }
   ]
 }
