@@ -24,19 +24,19 @@ export default {
   },
   mounted() {
     const self = this
-    axios
-      .get(process.env.API_URL + '/user', {
-        headers: {
-          Authorization: 'Bearer ' + localStorage.token
-        }
-      })
-      .then(function(response) {
-        self.user = response.data.user
-      })
-      .catch(function(error) {
-        // Todo: Redirect to login and notify of error
-        localStorage.error = error
-      })
+    // axios
+    //   .get(process.env.GRIDSOME_API_URL + '/user', {
+    //     headers: {
+    //       Authorization: 'Bearer ' + localStorage.token
+    //     }
+    //   })
+    //   .then(function(response) {
+    //     self.user = response.data.user
+    //   })
+    //   .catch(function(error) {
+    //     // Todo: Redirect to login and notify of error
+    //     localStorage.error = error
+    //   })
   }
 }
 </script>

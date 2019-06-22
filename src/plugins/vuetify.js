@@ -21,6 +21,8 @@ import Vuetify, {
   VTab,
   VTabItem,
   VTextField,
+  VTimeline,
+  VTimelineItem,
   VToolbar,
   VToolbarItems,
   VToolbarSideIcon
@@ -50,6 +52,8 @@ Vue.use(Vuetify, {
     VTab,
     VTabItem,
     VTextField,
+    VTimeline,
+    VTimelineItem,
     VToolbar,
     VToolbarItems,
     VToolbarSideIcon

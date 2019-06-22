@@ -3,18 +3,27 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-require('dotenv-flow').config()
 
 module.exports = {
   siteName: 'Native',
   siteDescription: 'Incentivize and Scale Digital Communities.',
   siteUrl: 'https://beta.nativeproject.one',
   titleTemplate: 'Native - %s',
-
-  chainWebpack: config => {
-    config
-      .plugin('env')
-      .use(require.resolve('webpack/lib/EnvironmentPlugin'), ['API_URL'])
-  },
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-drupal',
+      options: {
+        baseUrl: process.env.GRIDSOME_API_URL
+      }
+    },
+    {
+      use: '@gridsome/source-airtable',
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY, // required
+        baseId: process.env.AIRTABLE_BASE_ID, // required
+        tableName: process.env.AIRTABLE_TABLE_NAME, // required
+        typeName: process.env.AIRTABLE_TYPE_NAME, // required
+      }
+    }
+  ]
 }

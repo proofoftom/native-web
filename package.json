@@ -5,11 +5,11 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "lint": "eslint src",
     "now-build": "yarn build"
   },
   "dependencies": {
-    "@gridsome/plugin-critical": "^0.1.1",
+    "@gridsome/source-airtable": "^0.1.0",
+    "@gridsome/source-drupal": "^0.2.1",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "dotenv-flow": "^0.4.0",
@@ -25,5 +25,10 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

@@ -38,18 +38,7 @@
   </layout>
 </template>
 
-<page-query>
-query community ($path: String!) {
-  community: community (path: $path) {
-    title
-    image
-    location
-    memberCount
-    communityPurpose
-    subtitle
-  }
-}
-</page-query>
+
 
 <script>
 import {

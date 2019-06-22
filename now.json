@@ -8,5 +8,10 @@
       "use": "@now/static-build",
       "config": { "distDir": "dist" }
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "AIRTABLE_API_KEY": "@airtable-api-key"
+    }
+  }
 }
