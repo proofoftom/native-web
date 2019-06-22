@@ -6,6 +6,7 @@
         <StatusGroup v-for="(status, index) in statuses"
           :key="index"
           :title="status.title"
+          :description="status.description"
           :features="status.features"
         />
       </v-timeline>
@@ -34,29 +35,32 @@ export default {
   data() {
     return {
       statuses: {
-        complete: {
-          title: "Complete",
-          features: null
-        },
+        // complete: {
+        //   title: "Complete",
+        //   features: null
+        // },
         current: {
           title: "Current",
+          description: "Granular areas of focus with well defined scope and product specifications.",
           features: null
         },
         nearTerm: {
           title: "Near Term",
+          description: "Wider areas of focus with some flexibility on the scope.",
           features: null
         },
         future: {
           title: "Future",
+          description: "High level areas of focus with a broader and flexible scope.",
           features: null
         },
       }
     }
   },
   mounted() {
-    this.statuses.complete.features = this.$page.features.edges.filter(function(item) {
-      return item.node.priority == "Complete";
-    });
+    // this.statuses.complete.features = this.$page.features.edges.filter(function(item) {
+    //   return item.node.priority == "Complete";
+    // });
     this.statuses.current.features = this.$page.features.edges.filter(function(item) {
       return item.node.priority == "Current";
     });
