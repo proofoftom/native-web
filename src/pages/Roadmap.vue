@@ -2,7 +2,7 @@
   <div>
     <layout class="roadmap">
       <h1>Roadmap</h1>
-      <v-timeline dense align-top>
+      <v-timeline dense align-top class="pt-0">
         <StatusGroup v-for="(status, index) in statuses"
           :key="index"
           :title="status.title"
