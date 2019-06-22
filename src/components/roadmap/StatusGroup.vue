@@ -1,8 +1,6 @@
 <template>
   <v-timeline-item small color="#549387">
-    <div class="mt-3">
-      <span class="subheading grey--text text--darken-2">{{ this.$props.title }}</span>
-    </div>
+    <span class="subheading grey--text text--darken-2">{{ this.$props.title }}</span>
     <div class="mt-1 grey--text">
       <span class="body-2">{{ this.$props.description }}</span>
     </div>
@@ -33,3 +31,9 @@ import RoadmapCard from "~/components/cards/RoadmapCard";
     },
   }
 </script>
+
+<style lang="scss">
+.v-timeline-item__dot {
+  top: 0 !important;
+}
+</style>
