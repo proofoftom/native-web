@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style lang="stylus">
+.v-toolbar
+  background-color: rgba(255, 255, 255, 0.9) !important;
+
 // Animations
 .fade-enter-active
   transition opacity .5s
